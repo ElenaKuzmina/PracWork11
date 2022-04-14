@@ -1,0 +1,53 @@
+﻿<Window x:Class="PracWork11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracWork11"
+        mc:Ignorable="d"
+        Title="PracWork11" Height="600" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <TextBlock Text="Исходный массив"
+                       Margin="20"
+                       FontSize="14"
+                       FontWeight="DemiBold"
+                       FontFamily="Serifiqo 4F Free Capitals"
+                       Height="30"
+                       VerticalAlignment="Center"/>
+            <TextBlock Text="Полученный массив"
+                       Margin="20"
+                       FontSize="14"
+                        FontWeight="DemiBold"
+                       FontFamily="Serifiqo 4F Free Capitals"
+                       Height="30"
+                       VerticalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <ListBox Name="LstInput"
+                     Width="200" Margin="10"/>
+            <ListBox Name="LstRezult"
+                     Width="200" Margin="10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button Name="BtnInput"
+                    Content="Заполнить массив"
+                    Click="BtnInput_Click"
+                    />
+            <Button Name="BtnRezult"
+                    Content="Выполнить"
+                    Click="BtnRezult_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
