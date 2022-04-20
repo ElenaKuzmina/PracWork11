@@ -9,8 +9,8 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="6*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0"
                     Orientation="Horizontal"
@@ -41,6 +41,11 @@
                      FontSize="12"/>
         </StackPanel>
         <StackPanel Grid.Row="2"
+                    Orientation="Vertical"
+                    VerticalAlignment="Center">
+            
+       
+        <StackPanel 
                     Orientation="Horizontal"
                     HorizontalAlignment="Center">
             <Button Name="BtnInput"
@@ -50,6 +55,19 @@
             <Button Name="BtnRezult"
                     Content="Выполнить"
                     Click="BtnRezult_Click"/>
+        </StackPanel>
+        <StackPanel 
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+                <TextBlock Text="Минимальный элемент" 
+                           Margin="5"/>
+                <TextBlock x:Name="TxtMinim" 
+                           Margin="5"
+                           Width="100"/>
+                <Button Content="Поменять"
+                        Name="BtnChange"
+                        Click="BtnChange_Click"/>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>
